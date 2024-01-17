@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // write a fuction to delete all occurrences of element 'num' in a given array
+        // let arr = [1,2,3,4,5,6,2,3];
+        // function dele(num){
+        //     for(let i=0;i<arr.length;i++){
+        //         if(arr[i]==num){
+        //             arr.splice(i,1);
+        //         }
+        //         console.log(arr[i])
+        //     }
+        // }
+        // dele(2);
+
+        // write a js program to find the no of digits in a number
+
+        // function check(num){
+        //     let count =0;
+        //     let copy = num;
+        //     while(copy>0){
+        //         count++;
+        //         copy = Math.floor(copy/10);
+
+        //     }
+        //     return count;
+        // }
+        // console.log(check(287152));
+
+        // write a js program to find the sum of digits in a number
+        // function sum(num) {
+        //     let result = 0;
+        //     let copy = num;
+        //     while (copy > 0) {
+        //         rem = copy % 10;
+
+        //         result += rem;
+        //         copy = Math.floor(copy / 10);
+        //     }
+        //     return result;
+        // }
+        // console.log(sum(287152));
+
+        // print the factorila of a number
+        // function fact(n){
+        //     let result =1;
+        //     let copy = n;
+        //     while(copy>0){
+        //         result*=copy;
+        //         copy--;
+        //     }
+        //     return result;
+        // }
+        // console.log(fact(7));
+
+        // write a function to find the largest in array
+        function largest(arr){
+            let max = arr[0];
+            for(let i=1;i<arr.length;i++){
+                if(arr[i]>max){
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        let arr = [2,3,53,533,503,5004530];
+        console.log(largest(arr));
+    </script>
+</body>
+
+</html>

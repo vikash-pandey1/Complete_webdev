@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid-container{
+            border-radius: 20px;
+            display:grid;
+            height: 450px;
+            width: 450px;
+            background-color: aqua;
+
+            /* justify-items: end;
+            align-items: start; */
+            /* place-items:start; */
+
+            /* justify-content: center; */
+            /* justify-content: space-around;
+            align-items:center; */
+            
+            /* grid-template-rows: auto auto auto; */
+            /* grid-template-columns: auto auto auto ; */
+
+            /* other way to write above code */
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+
+            /* other way to write above code */
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr; */
+
+            /* grid gap */
+            /* row-gap: 10;
+            column-gap: 10px; */
+            grid-gap: 10px 20px;
+        }
+        .grid{
+            /* justify-self: start;
+            align-self: self-start; */
+            /* place-self: end; */
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            background-color: yellow;
+            /* text-align: center; */
+            justify-content: center;
+        }
+        #item{
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            /* grid-column: 2/4; */
+            grid-column: 1/span 2;
+        }
+        #item1{
+            /* grid-row-start: 1; */
+            /* grid-row-end: 3; */
+
+            /* grid-row: 1/4; */
+            grid-row: 1/span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid" id="item3">1</div>
+        <div class="grid" id="item2">2</div>
+        <div class="grid">3</div>
+        <div class="grid">4</div>
+        <div class="grid">5</div>
+        <div class="grid">6</div>
+        <div class="grid">7</div>
+        <div class="grid">8</div>
+        <div class="grid">9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: wpx solid black;
+            /* transition-delay: 1s;
+            transition-timing-function: linear;
+            transition-duration: 5s; */
+            transition: all 5s 1s ease-in;
+        }
+        #box1:hover{
+            width: 600px;
+
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            background: rgb(196, 168, 168);
+            transition: all 5s 1s ease-in;
+        }
+        #box2:hover{
+            width: 200px;
+            height: 200px;
+            /* transform: rotate(90deg); */
+            transform: skewX(20deg);
+        }
+        #box3{
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            box-shadow: 2px 2px  green;
+        }
+        #myPic{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">This is box1</div>
+    <div id="box2">This is box2</div>
+    <div id="box3">This is box3</div>
+    <div id="box4">This is box4</div>
+    <div id="myPic">This is my Pic</div>
+</body>
+</html>

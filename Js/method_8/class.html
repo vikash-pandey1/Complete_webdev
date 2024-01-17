@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<p>// return those student who have marks more than 80 roll no 50</p>
+<p>
+// print the name from the arr whose marks is more than 60
+
+</p>
+<p>
+// print total marks 4 student greater than 60 after 20 marks have been added to whose who score less than 60
+
+</p>
+    <script>
+        let student =[
+            {
+                name:'ai',
+                rollNO:31,
+                marks:80,
+            },
+            {
+                name:'bi',
+                rollNO:15,
+                marks:69,
+            },
+            {
+                name:'ci',
+                rollNO:16,
+                marks:35
+            },
+            {
+                name:'di',
+                rollNO:4,
+                marks:55,
+            },
+            {
+                name:'ei',
+                rollNO:14,
+                marks:65,
+            }
+        ]
+        //1
+        let a = student.filter((x)=>{
+            return x.marks >=60 && x.rollNO >=15;
+        });
+        console.log(a);
+
+        //2
+        let b = student.filter((x)=>{
+            if(x.marks >=60){
+                return x;
+            }
+        });
+        let c = b.map((x)=>{
+            return x.name
+        })
+        console.log(c);
+    
+        //3
+        let less = student.map((x)=>{
+            if(x.marks<=60){
+                x.marks+=20;
+            }
+            return x;
+        })
+        console.log(less);
+        let filtered = less.filter((x)=>{
+            return x.marks>60;
+        })
+        console.log(filtered);
+        let result = filtered.reduce()
+    </script>
+</body>
+</html>

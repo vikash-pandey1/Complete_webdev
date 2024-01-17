@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(...args){
+            for(let i =0;i<args.length;i++){
+                console.log('you gave us',args[i]);
+            }
+        }
+        sum(1,2,3,4);
+
+        function min(){
+            console.log(arguments);
+        }
+        min(1,2,3,4);
+
+        // sum of function
+        function sum(...args){
+            return args.reduce((sum,el)=>sum+el);
+        }
+
+        // min args function
+        function min(...args){
+            return args.reduce((min,el)=>{
+                if(min<el){
+                    return min;
+                }else{
+                    return el;
+                }
+            })
+        }
+        console.log(min(1,2,3,0,4));
+    </script>
+</body>
+</html>

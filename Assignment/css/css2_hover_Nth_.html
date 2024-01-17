@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Assignment</title>
+    <style>
+        #mainTopic{
+            color: blue;
+            background-color: cornflowerblue;
+        }
+        h1,h3,h5{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        img{
+            width: 17%;
+            height: 17%;
+        }
+        *{
+            text-align: center;
+        }
+        .para{
+            color: white;
+            background-color: cornflowerblue;
+        }
+        button{
+            background-color: purple;
+            color: azure;
+        }
+        button:hover{
+            background-color: yellow;
+            color: blue;
+        }
+        p:nth-child(odd){
+            color: yellow;
+        }
+        #yes:checked +label{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    div
+    <h1 id="mainTopic"><span></span> style="color: red;">C</span>ss Practice</h1>
+    <h3>Let's learn about selector.</h3>
+
+    <!-- paragraph1 -->
+    <p class="para">There are multiple selectors in css.</p>
+    <!-- paragraph2 -->
+    <p class="para">Some of them include class selector, id selector etc.</p>
+    <!-- paragraph -->
+    <p>And we can also combine these too.</p>
+    <div>
+        <h5>Did you like the practice set?</h5>
+        <input type="checkbox" id="yes">
+        <label for="yes">Yes</label>
+        <br>
+        <button>Learn next!</button>
+    </div>
+</body>
+</html>

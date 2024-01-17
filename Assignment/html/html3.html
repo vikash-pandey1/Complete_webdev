@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table</h2>
+    <table>
+        <tr>
+            <th rowspan="6">Info</th>
+            <td rowspan="2">Name</td>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>House</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <p>Qs2.ans </p>
+    <form action="">
+        <fieldset>
+            <legend>Form </legend>
+            <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="">Sex:</label>
+        <input type="radio" name="sex" id="male">
+        <label for="male">male</label>
+        <input type="radio" name="sex" id="female">
+        <label for="female">female</label>
+        <br>
+        <br>
+        <label for="car">Cars:</label>
+        <select name="car" id="car">
+            <option value="Select any car">Select any car</option>
+            <option value="">nexon</option>
+            <option value="">harrier</option>
+            <option value="safari">safari</option>
+        </select>
+        <br>
+        <br>
+        <label for="text">Message:</label><br>
+        <textarea name="message" id="text" cols="30" rows="4"></textarea>
+        <br>
+        <br>
+        <input type="checkbox" id="check">
+        <label for="check">Subscribe? </label>
+        <br>
+        <br>
+        <button>submit</button>
+    </form>
+    <form action="">
+        <fieldset><h1>Feedback Form</h1>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="naem" placeholder="Write your name">
+            <br/>
+            <br/>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Write your email">
+            <br>
+            <br>
+            <label for="text">Message</label>
+            <br>
+            <textarea name="text" id="text" cols="30" rows="3"></textarea>
+            <br>
+            <br>
+            <h5>Rate us our of 5 </h5>
+            <input type="radio" id="1">
+            <label for="1">1</label>
+            <br>
+            <input type="radio" id="2">
+            <label for="2">2</label>
+            <br>
+            <input type="radio" id="3">
+            <label for="3">3</label>
+            <br>
+            <input type="radio" id="4">
+            <label for="4">4</label>
+            <br>
+            <input type="radio" id="5">
+            <label for="5">5</label>
+            <br>
+            <br>
+            <button>Send your message!</button>
+        </fieldset>
+    </form>
+</body>
+</html>

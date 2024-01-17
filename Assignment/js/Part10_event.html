@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Events in js</h1>
+    <button>get started</button>
+
+    <ul>
+        <li>
+
+        </li>
+    </ul>
+    </div>
+    <script>
+
+        // question 1
+        let btn = document.querySelector('button');
+        btn.addEventListener('mouseout',function(){
+            console.log('mouseout event occur');
+        })
+        btn.addEventListener('keypress',function(){
+            console.log("keypress event occur");
+        })
+        btn.addEventListener('scroll',function(){
+            console.log("Scroll event occur");
+        })
+        btn.addEventListener('load',function(){
+            console.log("load event occur");
+        })
+
+        // question 2
+        let cont = document.querySelector('.container');
+        let bnt = document.createElement('button');
+        bnt.innerText = "button 2"
+        cont.appendChild(bnt);
+        bnt.addEventListener('click',function(){
+            this.style.color = 'green';
+            this.style.backgroundColor = 'red';
+        })
+
+        // question 3 
+        let ul = document.querySelector('ul');
+        let input = document.createElement('input');
+        input.placeholder = 'enter your name'
+        cont.appendChild(input);
+
+        bnt.addEventListener('click',function(){
+            let item = document.querySelector('li');
+            item.innerText = input.value;
+            ul.appendChild(item);
+            input.value = "";
+        })
+
+    </script>
+
+</body>
+</html>

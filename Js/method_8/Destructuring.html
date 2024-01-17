@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names = ['tony','bruce','ram','shita','ramesh','raghav'];
+        let[winner,runnerup,...other] = names;
+
+        // destrucuring using objects
+
+        const student = {
+            name:'vikash',
+            age:19,
+            class:'b-tech',
+            subjects:['os','co','dbms','math'],
+            username : 'vikash123',
+            pass:'vikash@'
+        };
+
+        let {username:user,pass:key,subjects,city:place ="mumbai"} = student;
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            
+            background-color: aqua;
+            /* width: 330px; */
+            width: var(--custom-width);
+            border: 2px solid brown;
+            height: 330px;
+            margin:5px;
+            padding: 5px;
+            /* box-shadow:-10px 15px brown ; */
+            /* box-shadow: 10px 15px 10px blue; */
+            box-shadow: 10px 10px 15px 20px blue;
+            /* box-shadow: inset 10px 15px 30px 20px  brown; */
+            /* box-shadow: 10px 20px yellow, 20px 15px blue; */
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        #h{
+            /* text-shadow:2px 3px 3px rgb(164, 9, 9)  ; */
+            /* text-shadow: yellow 12px 13px 2px; */
+            /* text-shadow: white 12px 13px; */
+            text-shadow: 12px 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://www.seoclerk.com/pics/677755-210axC1562182518.jpg" alt="img">
+            <h2 id="h">Welcome to webdev</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque cumque beatae voluptatibus, molestias exercitationem, fuga ea laudantium, voluptas molestiae veniam magnam! Eos, vero? Nesciunt, a aliquam ad itaque placeat iste ea praesentium sapiente corrupti voluptatem quos error reiciendis recusandae sint enim. Quia est et fugit modi voluptate fugiat eveniet.</p>
+        </div>
+    </div>
+</body>
+</html>
